@@ -4,89 +4,93 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 17% 98%; /* Light: #F9FAFB */
+    --foreground: 215 28% 17%; /* Light: #1F2937 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 210 17% 98%;
+    --card-foreground: 215 28% 17%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 210 17% 98%;
+    --popover-foreground: 215 28% 17%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 91% 60%; /* Light: #3B82F6 */
+    --primary-foreground: 210 40% 98%; /* Light: White/Very Light Gray */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 14% 96%; /* Light: #F3F4F6 */
+    --secondary-foreground: 215 28% 17%; /* Light: #1F2937 */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 14% 96%; /* Light: #F3F4F6 */
+    --muted-foreground: 215 10% 45%; /* Light: #6B7280 */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 14% 93%; /* Light: #E5E7EB slightly darker gray for interaction */
+    --accent-foreground: 215 28% 17%; /* Light: #1F2937 */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --success: 158 80% 39%; /* Light: #10B981 */
+    --success-foreground: 210 40% 98%; /* Light: White/Very Light Gray */
 
-    --radius: 0.5rem;
+    --border: 210 14% 89%; /* Light: #E5E7EB */
+    --input: 210 14% 89%;
+    --ring: 217 91% 60%; /* Light: Primary Blue #3B82F6 for focus */
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.5rem; /* 8px, fits 6-8px requirement */
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --font-sans: "Inter", "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar variables aligned with new theme */
+    --sidebar-background: 210 17% 98%;
+    --sidebar-foreground: 215 28% 17%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 14% 93%;
+    --sidebar-accent-foreground: 215 28% 17%;
+    --sidebar-border: 210 14% 89%;
+    --sidebar-ring: 217 91% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 217 33% 10%; /* Dark: #111827 */
+    --foreground: 213 10% 96%; /* Dark: #F3F4F6 */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 217 33% 10%;
+    --card-foreground: 213 10% 96%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 217 33% 10%;
+    --popover-foreground: 213 10% 96%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 94% 67%; /* Dark: #60A5FA */
+    --primary-foreground: 222.2 47.4% 11.2%; /* Dark: Dark Blue/Gray for text on primary */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 19% 20%; /* Dark: #1F2937 or similar dark gray */
+    --secondary-foreground: 213 10% 96%; /* Dark: #F3F4F6 */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 19% 20%;
+    --muted-foreground: 215 10% 70%; /* Dark: #9CA3AF */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 215 19% 23%; /* Dark: #374151 or similar for interactive accent */
+    --accent-foreground: 213 10% 96%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --success: 152 62% 52%; /* Dark: #34D399 */
+    --success-foreground: 217 33% 10%; /* Dark: Dark text for on light green */
+
+    --border: 215 19% 27%; /* Dark: #374151 */
+    --input: 215 19% 27%;
+    --ring: 217 94% 67%; /* Dark: Primary Blue #60A5FA for focus */
+
+    /* Sidebar variables aligned with new theme */
+    --sidebar-background: 217 33% 10%;
+    --sidebar-foreground: 213 10% 96%;
+    --sidebar-primary: 217 94% 67%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 215 19% 23%;
+    --sidebar-accent-foreground: 213 10% 96%;
+    --sidebar-border: 215 19% 27%;
+    --sidebar-ring: 217 94% 67%;
   }
 }
 
@@ -97,5 +101,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans); /* Apply the new font stack to the body */
   }
 }
